@@ -54,7 +54,16 @@ class _MyAppState extends State<MyApp> {
               RaisedButton(
                 onPressed: () {
                   WeAccept weAccept = WeAccept();
-                  weAccept.pay(amount: '100');
+                  weAccept.init(
+                    billingData: {},
+                    buttonsColor: "red",
+                    maskedPanNumber: 'xxxx-xxxx-xxxx-1234',
+                    paymentKey: 'hiuyuiuhdbediedendeindeibfur',
+                    saveCardDefault: false,
+                    showAlerts: false,
+                    showSaveCard: false,
+                    token: '123',
+                  );
                 },
                 child: Text('Pay'),
               )

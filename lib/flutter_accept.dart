@@ -11,12 +11,26 @@ class WeAccept {
     return version;
   }
 
-  Future<Map<dynamic, dynamic>> pay({
-    @required amount,
+  Future<String> init({
+    @required Map<String, String> billingData,
+    @required String paymentKey,
+    @required bool saveCardDefault,
+    @required bool showSaveCard,
+    @required bool showAlerts,
+    @required String token,
+    @required String maskedPanNumber,
+    @required String buttonsColor,
   }) async {
-    final Map<dynamic, dynamic> response =
-        await _channel.invokeMethod('pay', <String, String>{
-      'amount': amount,
+    final String response =
+        await _channel.invokeMethod('init', <String, dynamic>{
+      'billingData': billingData,
+      'paymentKey': paymentKey,
+      'saveCardDefault': saveCardDefault,
+      'showSaveCard': showSaveCard,
+      'showAlerts': showAlerts,
+      'token': token,
+      'maskedPanNumber': maskedPanNumber,
+      'buttonsColor': buttonsColor,
     });
 
     return response;
