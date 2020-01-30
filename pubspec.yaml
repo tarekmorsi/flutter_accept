@@ -1,8 +1,8 @@
 name: flutter_accept
-description: A new Flutter plugin.
-version: 0.0.1
-author:
-homepage:
+description: An open source Flutter plugin for calling WeAccept’s native SDK
+version: 1.0.0
+author: Tarek Morsi <https://github.com/tarekmorsi>
+homepage: https://github.com/tarekmorsi/flutter_accept
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

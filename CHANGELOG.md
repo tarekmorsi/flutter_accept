@@ -1,3 +1,5 @@
-## 0.0.1
+## ChangeLog
 
-* TODO: Describe initial release.
+### v1.0.0 Jan 30, 2020
+
+* Initial release.
